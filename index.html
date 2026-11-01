@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Кедровая долина — Сосновый бор</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="main-section">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="brand" href="#">
+                        <span class="brand__logo">К</span>
+
+                        <span class="brand__text">
+                            <span class="brand__name">
+                                Кедровая долина
+                            </span>
+
+                            <span class="brand__description">
+                                Премиальная загородная резиденция
+                            </span>
+                        </span>
+                    </a>
+
+                    <nav
+                        class="header__nav"
+                        id="main-navigation"
+                        aria-label="Основная навигация"
+                    >
+                        <a href="#catalog">О резиденции</a>
+                        <a href="#gallery">Фотографии</a>
+                        <a href="#expert">Контакты</a>
+                    </nav>
+
+                    <div class="header__actions">
+                        <a class="header__phone" href="tel:+74951234567">
+                            <span class="header__phone-full">
+                                +7 (495) 123-45-67
+                            </span>
+
+                            <span class="header__phone-short">
+                                Звонок
+                            </span>
+                        </a>
+
+                        <button
+                            class="header__menu"
+                            type="button"
+                            aria-label="Открыть меню"
+                            aria-controls="main-navigation"
+                            aria-expanded="false"
+                        >
+                            <img src="images/menu.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="intro">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                    <a class="breadcrumbs__link" href="#">
+                        <span aria-hidden="true">←</span>
+                        Каталог
+                    </a>
+
+                    <span class="breadcrumbs__separator" aria-hidden="true">/</span>
+
+                    <span class="breadcrumbs__current" aria-current="page">
+                        Дом
+                    </span>
+                </nav>
+
+                <div class="intro__content">
+                    <h1 class="intro__title">
+                        Резиденция<br>
+                        «Сосновый бор»
+                    </h1>
+
+                    <p class="intro__description">
+                        Современная загородная вилла с террасой, камином и видом на лесной массив.
+                        Готовый объект с отделкой, инфраструктурой и тихим расположением.
+                    </p>
+
+                    <div class="intro__tags">
+                        <span class="intro__tag">Частная резиденция</span>
+                        <span class="intro__tag">Современная архитектура</span>
+                        <span class="intro__tag">Вид на лес</span>
+                    </div>
+
+                    <div class="intro__features">
+                        <div class="intro__feature">
+                            <span class="intro__feature-label">Цена</span>
+                            <span class="intro__feature-value">78 000 000 ₽</span>
+                        </div>
+
+                        <div class="intro__feature">
+                            <span class="intro__feature-label">Площадь</span>
+                            <span class="intro__feature-value">240 м²</span>
+                        </div>
+
+                        <div class="intro__feature">
+                            <span class="intro__feature-label">Участок</span>
+                            <span class="intro__feature-value">12 соток</span>
+                        </div>
+
+                        <div class="intro__feature">
+                            <span class="intro__feature-label">Комнат</span>
+                            <span class="intro__feature-value">5</span>
+                        </div>
+                    </div>
+
+                    <div class="intro__actions">
+                        <a class="intro__button intro__button--primary" href="#location">
+                            <img
+                                src="images/location-pin.svg"
+                                alt=""
+                                width="18"
+                                height="18"
+                            >
+                            Назначить визит
+                        </a>
+
+                        <a class="intro__button intro__button--secondary" href="#location">
+                            <img
+                                src="images/play.svg"
+                                alt=""
+                                width="18"
+                                height="18"
+                            >
+                            Расположение
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <h2 class="gallery__title">
+                    Пространства резиденции
+                </h2>
+
+                <div class="gallery__grid">
+                    <img
+                        class="gallery__image"
+                        src="images/gallery-1.jpg"
+                        alt="Гостиная с камином и видом на лес"
+                    >
+
+                    <img
+                        class="gallery__image"
+                        src="images/gallery-2.jpg"
+                        alt="Кухня с деревянной отделкой и островом"
+                    >
+
+                    <img
+                        class="gallery__image"
+                        src="images/gallery-3.jpg"
+                        alt="Спальня с видом на деревья"
+                    >
+
+                    <img
+                        class="gallery__image"
+                        src="images/gallery-4.jpg"
+                        alt="Ванная комната с отдельно стоящей ванной"
+                    >
+
+                    <img
+                        class="gallery__image"
+                        src="images/gallery-5.jpg"
+                        alt="Деревянная терраса среди леса"
+                    >
+                </div>
+
+                <div class="gallery__controls">
+                    <button
+                        class="gallery__arrow"
+                        type="button"
+                        aria-label="Предыдущее фото"
+                        disabled
+                    >
+                        <img
+                            src="images/arrow-left.svg"
+                            alt=""
+                            width="20"
+                            height="20"
+                        >
+                    </button>
+
+                    <span class="gallery__controls-text">Ещё фото</span>
+
+                    <button
+                        class="gallery__arrow"
+                        type="button"
+                        aria-label="Следующее фото"
+                        disabled
+                    >
+                        <img
+                            src="images/arrow-right.svg"
+                            alt=""
+                            width="20"
+                            height="20"
+                        >
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog" id="catalog">
+            <div class="container">
+                <div class="catalog__inner">
+                    <div class="catalog__content">
+                        <h2 class="catalog__title">
+                            Каталог резиденции
+                        </h2>
+
+                        <p class="catalog__description">
+                            Скачайте презентацию объекта: планировка,
+                            материалы, инфраструктура и условия покупки.
+                        </p>
+
+                        <a
+                            class="button catalog__download"
+                            href="files/presentation.pdf"
+                            download
+                        >
+                            <img
+                                src="images/download.svg"
+                                alt=""
+                                width="18"
+                                height="18"
+                            >
+                            <span>Скачать презентацию</span>
+                        </a>
+                    </div>
+
+                    <div class="catalog__cards">
+                        <article class="catalog__card">
+                            <h3 class="catalog__card-title">
+                                СОСНОВЫЙ БОР
+                            </h3>
+
+                            <img
+                                class="catalog__card-image"
+                                src="images/catalog-cover.jpg"
+                                alt="Гостиная резиденции с панорамными окнами"
+                            >
+
+                            <p class="catalog__card-description">
+                                КАТАЛОГ РЕЗИДЕНЦИИ
+                                Кедровая долина 2026
+                            </p>
+                        </article>
+
+                        <article class="catalog__card">
+                            <h3 class="catalog__card-title">
+                                ДЕТАЛИ
+                            </h3>
+
+                            <img
+                                class="catalog__card-image"
+                                src="images/catalog-cover.jpg"
+                                alt="Интерьер резиденции"
+                            >
+
+                            <p class="catalog__card-description">
+                                240 м² · 5 комнат
+                                Продуманное пространство
+                                для загородной жизни.
+                            </p>
+                        </article>
+
+                        <article class="catalog__curator">
+                            <img
+                                class="catalog__curator-image"
+                                src="images/curator.jpg"
+                                alt="Анна Смирнова — куратор объекта"
+                            >
+
+                            <h3 class="catalog__curator-name">
+                                Анна Смирнова
+                            </h3>
+
+                            <p class="catalog__curator-role">
+                                Куратор объекта
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="expert" id="expert">
+            <div class="container">
+                <div class="expert__inner">
+                    <div class="expert__content">
+                        <h2 class="expert__title">
+                            Покупка с поддержкой эксперта
+                        </h2>
+
+                        <p class="expert__description">
+                            Обсудим подходящий способ оплаты и подготовим
+                            документы для спокойной покупки загородного дома.
+                        </p>
+
+                        <div class="expert__tags">
+                            <span class="expert__tag">
+                                Подбор программы
+                            </span>
+
+                            <span class="expert__tag">
+                                Проверка документов
+                            </span>
+
+                            <span class="expert__tag">
+                                Поддержка до передачи ключей
+                            </span>
+                        </div>
+
+                        <ul class="expert__list">
+                            <li class="expert__list-item">
+                                Сравним условия банков
+                            </li>
+
+                            <li class="expert__list-item">
+                                Соберём документы по объекту
+                            </li>
+
+                            <li class="expert__list-item">
+                                Проконтролируем расчёты и регистрацию
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="expert__contact">
+                        <h3 class="expert__contact-title">
+                            Обсудим вашу покупку
+                        </h3>
+
+                        <p class="expert__contact-description">
+                            Оставьте номер, и специалист свяжется с вами
+                        </p>
+
+                        <form class="expert__form">
+                            <label class="expert__label" for="expert-phone">
+                                Телефон
+                            </label>
+
+                            <div class="expert__form-row">
+                                <input
+                                    class="expert__input"
+                                    type="tel"
+                                    id="expert-phone"
+                                    name="phone"
+                                    placeholder="+7 (___) ___-__-__"
+                                    autocomplete="tel"
+                                >
+
+                                <button
+                                    class="button expert__submit"
+                                    type="button"
+                                >
+                                    Связаться с экспертом
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="location" id="location">
+            <div class="container">
+                <h2 class="location__title">
+                    Сосновый бор на карте
+                </h2>
+
+                <p class="location__address">
+                    пос. Сосновый Бор, ул. Лесная, д. 18
+                </p>
+
+                <div class="location__content">
+                    <div class="location__map">
+                        <iframe
+                            class="location__iframe"
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A49b84b248d49ad675461964ad1af3af7188e9bbc7283592ef2ae7e61569709c2&amp;source=constructor"
+                            title="Карта расположения резиденции"
+                            loading="lazy"
+                            allowfullscreen
+                        ></iframe>
+
+                        <div class="location__map-label location__map-label--left">
+                            <img src="images/map.svg" alt="" width="16" height="16">
+                            <span>Карта района</span>
+                        </div>
+
+                        <div class="location__map-label location__map-label--right">
+                            <img src="images/info.svg" alt="" width="16" height="16">
+                            <span>Инфраструктура</span>
+                        </div>
+
+                        <div class="location__nearby">
+                            <h3 class="location__nearby-title">
+                                Рядом с объектом
+                            </h3>
+
+                            <ul class="location__nearby-list">
+                                <li class="location__nearby-item">
+                                    <img src="images/park.svg" alt="" width="16" height="16">
+                                    <span>Лесной парк — 300 м</span>
+                                </li>
+
+                                <li class="location__nearby-item">
+                                    <img src="images/shop.svg" alt="" width="16" height="16">
+                                    <span>Магазин — 1,2 км</span>
+                                </li>
+
+                                <li class="location__nearby-item">
+                                    <img src="images/bus.svg" alt="" width="16" height="16">
+                                    <span>Остановка — 1,5 км</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="location__booking">
+                        <h3 class="location__booking-title">
+                            Увидеть дом лично
+                        </h3>
+
+                        <form class="location__booking-form">
+                            <label class="location__booking-label" for="booking-phone">
+                                Телефон
+                            </label>
+
+                            <input
+                                class="location__booking-input"
+                                id="booking-phone"
+                                name="booking-phone"
+                                type="tel"
+                                placeholder="+7 (___) ___-__-__"
+                                autocomplete="tel"
+                            >
+
+                            <button class="button location__booking-button" type="button">
+                                Назначить визит
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a class="brand" href="#">
+                    <span class="brand__logo">К</span>
+
+                    <span class="brand__text">
+                        <span class="brand__name">
+                            Кедровая долина
+                        </span>
+
+                        <span class="brand__description">
+                            Премиальная загородная резиденция
+                        </span>
+                    </span>
+                </a>
+
+                <div class="footer__contacts">
+                    <a class="footer__phone" href="tel:+74951234567">
+                        +7 (495) 123-45-67
+                    </a>
+
+                    <div class="footer__socials">
+                        <a class="footer__social" href="tel:+74951234567"
+                           aria-label="Позвонить">
+                            <img src="images/phone.svg" alt="">
+                        </a>
+
+                        <a class="footer__social" href="#"
+                           aria-label="Написать в мессенджер">
+                            <img src="images/message.svg" alt="">
+                        </a>
+
+                        <a class="footer__social" href="mailto:info@example.com"
+                           aria-label="Написать на почту">
+                            <img src="images/mail.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <address class="footer__address">
+                        пос. Сосновый Бор, ул. Лесная, д. 18
+                    </address>
+
+                    <p class="footer__copyright">
+                        © 2026 Кедровая долина
+                    </p>
+
+                    <p class="footer__notice">
+                        Материалы для ознакомления, условия покупки
+                        уточняйте у специалиста.
+                    </p>
+                </div>
+
+                <div class="footer__house">
+                    <img
+                        class="footer__image"
+                        src="images/footer-house.jpg"
+                        alt="Загородный дом среди деревьев"
+                    >
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
