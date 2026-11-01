@@ -5,8 +5,8 @@
 Проект лендинг премиальной загородной резиденции «Сосновый бор» бренда «Кедровая долина»: первый экран, галерея, каталог, блок поддержки эксперта, карта и подвал. Вёрстка на HTML и CSS, с адаптацией под Desktop и Mobile и состояниями интерактивных элементов.
 
 ## Макет
-[
-[Макет в Figma](https://www.figma.com/](https://www.figma.com/design/lCGkxmvpiY5iV01hdawsMv/Frontend-%D1%81-%D0%BD%D1%83%D0%BB%D1%8F--HTML--CSS?node-id=8803-98&t=bdNxX9DrrVBmzfmT-0))
+
+[Макет в Figma](https://www.figma.com/design/lCGkxmvpiY5iV01hdawsMv/Frontend-%D1%81-%D0%BD%D1%83%D0%BB%D1%8F--HTML--CSS?node-id=8803-98&t=bdNxX9DrrVBmzfmT-0)
 
 ## Важно
 
