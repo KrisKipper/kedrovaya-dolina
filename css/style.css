@@ -86,6 +86,8 @@ textarea {
 }
 
 .header {
+    position: relative;
+    z-index: 2;
     padding-top: 32px;
     color: #ffffff;
 }
@@ -381,6 +383,12 @@ textarea {
     padding: 0;
     border: none;
     background: transparent;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.gallery__arrow:hover {
+    opacity: 0.6;
 }
 
 .gallery__arrow img {
@@ -638,6 +646,13 @@ textarea {
     width: 100%;
 }
 
+.expert__field {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+}
+
 .expert__label {
     display: block;
     margin-bottom: 8px;
@@ -649,12 +664,12 @@ textarea {
 
 .expert__form-row {
     display: flex;
-    align-items: stretch;
+    align-items: flex-start;
     gap: 12px;
 }
 
 .expert__input {
-    flex: 1;
+    width: 100%;
     min-width: 0;
     padding: 16px;
     border: 1px solid #e7ded0;
@@ -674,6 +689,7 @@ textarea {
 
 .expert__submit {
     flex-shrink: 0;
+    margin-top: 28px;
 }
 
 .location {
@@ -829,8 +845,16 @@ textarea {
     width: 100%;
 }
 
+.location__booking-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+}
+
 .location__booking-label {
-    margin-bottom: -4px;
+    display: block;
+    margin-bottom: 8px;
     color: #1f242b;
     font-size: 14px;
     font-weight: 700;
@@ -987,10 +1011,19 @@ textarea {
 }
 
 .input-error {
-    margin: 8px 0 0;
-    color: #a84438;
+    display: block;
+    margin-top: 6px;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 1.4;
+    color: #c64747;
+}
+
+.form-success {
+    margin: 12px 0 0;
+    color: #3f7150;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
 }
 
 .expert__input:disabled,
@@ -1103,6 +1136,42 @@ textarea {
     .header__menu img {
         width: 18px;
         height: 18px;
+    }
+
+    .header__menu-close-icon {
+        display: none;
+    }
+
+    .header__menu[aria-expanded="true"] .header__menu-open-icon {
+        display: none;
+    }
+
+    .header__menu[aria-expanded="true"] .header__menu-close-icon {
+        display: block;
+    }
+
+    .header__nav.is-open {
+        display: flex;
+        position: absolute;
+        top: calc(100% + 16px);
+        right: 20px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+        width: min(280px, calc(100% - 40px));
+        padding: 12px;
+        border-radius: 12px;
+        background: rgba(31, 36, 43, 0.92);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .header__nav.is-open a {
+        display: flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 10px 12px;
+        font-size: 15px;
     }
 
     .main-section {
@@ -1348,6 +1417,10 @@ textarea {
         width: 100%;
     }
 
+    .expert__submit {
+        margin-top: 0;
+    }
+
     .location {
         padding: 24px 0;
     }
@@ -1411,10 +1484,6 @@ textarea {
 
     .location__booking-form {
         gap: 16px;
-    }
-
-    .location__booking-label {
-        margin-bottom: -8px;
     }
 
     .location__booking-input,

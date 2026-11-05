@@ -55,7 +55,16 @@
                             aria-controls="main-navigation"
                             aria-expanded="false"
                         >
-                            <img src="images/menu.svg" alt="">
+                            <img
+                                class="header__menu-open-icon"
+                                src="images/menu.svg"
+                                alt=""
+                            >
+                            <img
+                                class="header__menu-close-icon"
+                                src="images/close.svg"
+                                alt=""
+                            >
                         </button>
                     </div>
                 </div>
@@ -185,8 +194,8 @@
                     <button
                         class="gallery__arrow"
                         type="button"
-                        aria-label="Предыдущее фото"
-                        disabled
+                        data-direction="prev"
+                        aria-label="Предыдущие фотографии"
                     >
                         <img
                             src="images/arrow-left.svg"
@@ -201,8 +210,8 @@
                     <button
                         class="gallery__arrow"
                         type="button"
-                        aria-label="Следующее фото"
-                        disabled
+                        data-direction="next"
+                        aria-label="Следующие фотографии"
                     >
                         <img
                             src="images/arrow-right.svg"
@@ -350,25 +359,24 @@
                             Оставьте номер, и специалист свяжется с вами
                         </p>
 
-                        <form class="expert__form">
-                            <label class="expert__label" for="expert-phone">
-                                Телефон
-                            </label>
-
+                        <form class="expert__form" novalidate>
                             <div class="expert__form-row">
-                                <input
-                                    class="expert__input"
-                                    type="tel"
-                                    id="expert-phone"
-                                    name="phone"
-                                    placeholder="+7 (___) ___-__-__"
-                                    autocomplete="tel"
-                                >
+                                <div class="expert__field">
+                                    <label class="expert__label" for="expert-phone">
+                                        Телефон
+                                    </label>
 
-                                <button
-                                    class="button expert__submit"
-                                    type="button"
-                                >
+                                    <input
+                                        class="expert__input"
+                                        type="tel"
+                                        id="expert-phone"
+                                        name="phone"
+                                        placeholder="+7 (___) ___-__-__"
+                                        autocomplete="tel"
+                                    >
+                                </div>
+
+                                <button class="button expert__submit" type="submit">
                                     Связаться с экспертом
                                 </button>
                             </div>
@@ -437,21 +445,29 @@
                             Увидеть дом лично
                         </h3>
 
-                        <form class="location__booking-form">
-                            <label class="location__booking-label" for="booking-phone">
-                                Телефон
-                            </label>
+                        <form class="location__booking-form" novalidate>
+                            <div class="location__booking-field">
+                                <label
+                                    class="location__booking-label"
+                                    for="booking-phone"
+                                >
+                                    Телефон
+                                </label>
 
-                            <input
-                                class="location__booking-input"
-                                id="booking-phone"
-                                name="booking-phone"
-                                type="tel"
-                                placeholder="+7 (___) ___-__-__"
-                                autocomplete="tel"
+                                <input
+                                    class="location__booking-input"
+                                    id="booking-phone"
+                                    name="booking-phone"
+                                    type="tel"
+                                    placeholder="+7 (___) ___-__-__"
+                                    autocomplete="tel"
+                                >
+                            </div>
+
+                            <button
+                                class="button location__booking-button"
+                                type="submit"
                             >
-
-                            <button class="button location__booking-button" type="button">
                                 Назначить визит
                             </button>
                         </form>
@@ -526,5 +542,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
